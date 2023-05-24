@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --amarelo: #fbbb21;
+  --azul: #004254;
+  --azul-claro: #0042542a;
+  --branco: white;
+  --sombra: rgba(0, 0, 0, 0.512);
+  --vermelho: rgb(151, 15, 15);
+
+  --fonte-principal: 'Open Sans', sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-principal);
+  gap: 1rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--branco);
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px var(--sombra);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 320px;
+}
+
+.container p {
+  font-size: 1rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.container label {
+  margin-bottom: 1rem;
+}
+
+.input-caixa {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  width: 220px;
+}
+
+.botao {
+  background-color: var(--amarelo);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem;
+  padding: 0.8rem 4rem;
+  transition: 1s;
+}
+
+.botao:hover {
+  background-color: var(--vermelho);
+  box-shadow: 2px 2px 2px var(--sombra);
+}
+
+.link {
+  color: var(--azul);
+  text-decoration: none;  
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.mensagem-notificacao {
+  background-color: var(--azul-claro);
+  color: var(--azul);
+  font-weight: 400;
+  margin-top: 1.5rem;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+
+.link__github {
+  align-items: center;
+  color: var(--amarelo);
+  display: flex;
+  font-weight: 700;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.link__github:hover {
+  text-decoration: underline;
+}
+
+.link__github img {
+  width: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 450px;
+  }
+}
